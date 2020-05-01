@@ -1,0 +1,327 @@
+/* -- RESET -- */
+
+* { margin: 0; padding: 0;}
+
+/* -- CABEÇALHO -- */
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	background: #FFFFFF;
+	padding: 20px 0;
+	border-bottom: 2px solid #000000;
+}
+
+.logo{
+	transition: 0.5s;
+}
+
+.logo:hover{
+	transform: scale(1.1);
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav li{
+	display: inline;
+	margin-left: 15px;
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+/* -- HOME -- */
+
+.banner{
+	width: 100%;
+	border-bottom: 2px solid #000000;
+}
+
+.principal{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal img{
+	float: left;
+	width: 130px;
+	margin: 15px;
+}
+
+.principal p{
+	text-align: left;
+	font-size: 1.3em;
+	margin: 0 0 1em;
+	width: 940px 0;
+	margin: 0 auto;
+}
+
+.texto-principal{
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	padding: 1em;
+}
+
+.texto-principal::before{
+	content: "- ";
+}
+
+.texto-principal::after{
+	content: " -";
+}
+
+.principal-mapa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.principal-mapa p {
+	text-align: center;
+	padding: 0 0 2em;
+	font-size: 1.3em;
+	
+}
+
+.principal-beneficios{
+	position: relative;
+	text-align: center;
+}
+
+.conteudo-beneficio img{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.ul-home{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.ul-home li{
+	line-height: 1.5;
+	font-size: 1.3em;
+}
+
+.itens::before{
+	content: "💈";
+}
+
+.itens:first-child{
+	font-weight: bold;
+}
+
+.video{
+	width: 560px;
+	margin: 2em auto;
+}
+
+/* -- PRODUTOS -- */
+
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.50%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 15px;
+}
+
+.produtos li:hover{
+	border-color: #C78C19;
+}
+
+.produtos li:active{
+	border-color: orangered
+}
+
+.produtos li:hover h2{
+	transform: scale(1.13);
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+/* -- CONTATO -- */
+
+form{
+	margin: 40px;
+}
+
+form label, form legend{ 
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+fieldset{
+	border: none;
+}
+
+.input-padrao{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+	padding: 5px;
+	width: 50%;
+}
+
+.input-padrao::placeholder{
+	color: #CCCCCC;
+	opacity: 0.9;
+	font-size: 18px;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+select{
+	font-size: 18px;
+	margin: 0 0 10px;
+	padding: 5px 5px;
+	width: 10%;
+	text-align: center;
+}
+
+.enviar{
+	padding: 15px 0;
+	font-weight: bold;
+	font-size: 18px;
+	width: 40%;
+	background: orangered;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background: orange;
+	transform: scale(1.1);
+}
+
+/* -- RODAPÉ -- */
+
+footer{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	background: url("../img/bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 20px 0 0;
+}
+
+/* -- CELULAR -- */
+
+@media screen and (max-width: 600px){
+	.caixa, .principal, .principal-beneficios, .principal-mapa, .video, .ul-home, .produtos {
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	.texto-principal{
+		font-size: 1.6em;
+	}
+
+	nav{
+		width: 100%;
+		position: static;
+	}
+
+	.principal p{
+		text-align: justify;
+		padding: 0.5em;
+		font-size: 1.1em;
+	}
+
+	.principal-mapa p {
+		text-align: center;
+		padding: 0 0 1.5em;
+		font-size: 1.1em;	
+	}
+	
+	.ul-home{
+		padding-bottom: 20px;
+	}
+
+	.ul-home li{
+		line-height: 1.2s;
+		font-size: 1em;
+	}
+
+	.produtos li {
+		display: inline-block;
+		position: static;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.produtos li img {
+		width: 100%;
+		position: static;
+	}
+
+	select{
+		width: 40%;
+	}
+
+}
